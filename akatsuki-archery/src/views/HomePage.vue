@@ -7,9 +7,9 @@
     <section class="hero">
       <div class="hero-content">
         <div class="logo-container">
-          <img 
-            src="/src/assets/49d05386-b8dc-43c2-a3e3-3a6dc3e3e54b.png" 
-            alt="Archery Mastery Logo" 
+          <img
+            src="/src/assets/49d05386-b8dc-43c2-a3e3-3a6dc3e3e54b.png"
+            alt="Archery Mastery Logo"
             class="logo-img"
             @error="handleLogoError"
           />
@@ -23,10 +23,10 @@
         </p>
         <div class="hero-buttons">
           <router-link to="/classes" class="btn btn-primary">View Classes</router-link>
-          <a 
-            :href="whatsappLink" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            :href="whatsappLink"
+            target="_blank"
+            rel="noopener noreferrer"
             class="btn btn-secondary"
           >
             Contact Us
@@ -35,9 +35,9 @@
       </div>
       <div class="hero-image">
         <div class="hero-image-placeholder">
-          <img 
-            src="/src/assets/images(2).jpg" 
-            alt="Archery Mastery Logo" 
+          <img
+            src="/src/assets/images(2).jpg"
+            alt="Archery Mastery Logo"
             class="hero-logo"
             @error="handleHeroLogoError"
           />
@@ -47,7 +47,7 @@
     </section>
 
     <!-- Parallax Section -->
-    <ParallaxBackground 
+    <ParallaxBackground
       :image="parallaxImage"
       :speed="0.4"
       height="500px"
@@ -93,10 +93,10 @@
           <div class="info-card">
             <h3>📍 Our Location</h3>
             <p>Kalemegdan fortress</p>
-        
-            <a 
-              href="https://www.google.com/maps/place/44%C2%B049'27.5%22N+20%C2%B027'02.5%22E/@44.8243049,20.4500543,19z/data=!3m1!4b1!4m4!3m3!8m2!3d44.824304!4d20.450698?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D" 
-              target="_blank" 
+
+            <a
+              href="https://www.google.com/maps/place/44%C2%B049'27.5%22N+20%C2%B027'02.5%22E/@44.8243049,20.4500543,19z/data=!3m1!4b1!4m4!3m3!8m2!3d44.824304!4d20.450698?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
               rel="noopener noreferrer"
               class="info-link"
             >
@@ -108,10 +108,10 @@
             <p><strong>Phone:</strong> +381 60 6554130</p>
             <p><strong>Email:</strong> akatsuki@gmail.com</p>
             <p><strong>Hours:</strong> Mon–Sat, 12:00 AM – 8:00 PM</p>
-            <a 
-              :href="whatsappLink" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              :href="whatsappLink"
+              target="_blank"
+              rel="noopener noreferrer"
               class="info-link"
             >
               Chat on WhatsApp →
@@ -134,10 +134,10 @@
       <div class="container">
         <h2>Ready to Begin Your Journey?</h2>
         <p>Join our community and discover the art of archery today.</p>
-        <a 
-          :href="whatsappLink" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          :href="whatsappLink"
+          target="_blank"
+          rel="noopener noreferrer"
           class="btn btn-primary btn-large"
         >
           Contact Us Now
@@ -160,7 +160,7 @@
 
 <script>
 import ParallaxBackground from '@/components/ParallaxBackground.vue'
-import ArcheryBackground from '@/components/ArcheryBackground.vue'
+
 
 export default {
   name: 'HomePage',
@@ -707,7 +707,7 @@ button {
   .parallax-content-custom h2 {
     font-size: 2.5rem;
   }
-  
+
   .parallax-content-custom p {
     font-size: 1rem;
   }
