@@ -22,7 +22,9 @@
           Discover the precision, focus, and discipline of traditional archery.
         </p>
         <div class="hero-buttons">
-          <router-link to="/classes" class="btn btn-primary">View Classes</router-link>
+          <router-link to="/classes" class="btn btn-primary"
+            >View Classes</router-link
+          >
           <a
             :href="whatsappLink"
             target="_blank"
@@ -70,17 +72,26 @@
           <div class="feature-card">
             <div class="feature-icon">🏹</div>
             <h3>Expert Instruction</h3>
-            <p>Learn from certified archery coaches with years of competitive and teaching experience.</p>
+            <p>
+              Learn from certified archery coaches with years of competitive and
+              teaching experience.
+            </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
             <h3>State-of-the-Art Facility</h3>
-            <p>Train in our modern indoor range with professional equipment and safety standards.</p>
+            <p>
+              Train in our modern indoor range with professional equipment and
+              safety standards.
+            </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">👥</div>
             <h3>All Skill Levels</h3>
-            <p>Whether you're a beginner or looking to refine your technique, we have a program for you.</p>
+            <p>
+              Whether you're a beginner or looking to refine your technique, we
+              have a program for you.
+            </p>
           </div>
         </div>
       </div>
@@ -159,41 +170,42 @@
 </template>
 
 <script>
-import ParallaxBackground from '@/components/ParallaxBackground.vue'
-
+import ParallaxBackground from "@/components/ParallaxBackground.vue";
 
 export default {
-  name: 'HomePage',
+  name: "HomePage",
   components: {
     ParallaxBackground,
-    ArcheryBackground
   },
   data() {
     return {
       logoError: false,
       heroLogoError: false,
       // For Vite:
-      parallaxImage: new URL('@/assets/49d05386-b8dc-43c2-a3e3-3a6dc3e3e54b.png', import.meta.url).href,
+      parallaxImage: new URL(
+        "@/assets/49d05386-b8dc-43c2-a3e3-3a6dc3e3e54b.png",
+        import.meta.url,
+      ).href,
       // WhatsApp configuration - replace with your actual phone number
-      whatsappNumber: '381606565130', // Replace with your WhatsApp number (country code + number, no + sign)
-      whatsappMessage: 'Hello! I\'m interested in your archery classes.'
-    }
+      whatsappNumber: "381606565130", // Replace with your WhatsApp number (country code + number, no + sign)
+      whatsappMessage: "Hello! I'm interested in your archery classes.",
+    };
   },
   computed: {
     whatsappLink() {
-      const encodedMessage = encodeURIComponent(this.whatsappMessage)
-      return `https://wa.me/${this.whatsappNumber}?text=${encodedMessage}`
-    }
+      const encodedMessage = encodeURIComponent(this.whatsappMessage);
+      return `https://wa.me/${this.whatsappNumber}?text=${encodedMessage}`;
+    },
   },
   methods: {
     handleLogoError() {
-      this.logoError = true
+      this.logoError = true;
     },
     handleHeroLogoError() {
-      this.heroLogoError = true
-    }
-  }
-}
+      this.heroLogoError = true;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -206,7 +218,15 @@ export default {
 
 .landing-page {
   position: relative;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   color: #1a1a1a;
   background-color: #ffffff;
   line-height: 1.6;
@@ -302,7 +322,11 @@ button {
   justify-content: space-between;
   min-height: 80vh;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, rgba(248, 248, 248, 0.85) 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(248, 248, 248, 0.85) 0%,
+    rgba(255, 255, 255, 0.9) 100%
+  );
   gap: 3rem;
 }
 
@@ -321,7 +345,7 @@ button {
 }
 
 .hero-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 80px;
   height: 4px;
@@ -383,7 +407,9 @@ button {
   font-weight: 600;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
   border: 2px solid transparent;
   cursor: pointer;
 }
@@ -465,7 +491,7 @@ button {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 4px;
@@ -486,7 +512,9 @@ button {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
   border-top: 4px solid #cc0000;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   backdrop-filter: blur(5px);
 }
 
