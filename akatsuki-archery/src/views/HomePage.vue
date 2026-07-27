@@ -241,7 +241,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 9999 !important; /* Change this from 0 to 9999 */
+  z-index: 0 !important; /* Change this from 0 to 9999 */
   pointer-events: auto;
 }
 
